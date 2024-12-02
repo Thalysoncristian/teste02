@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>camera</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STTE Relatório Técnico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="https://gms.stte.com.br/gms_rno/images/logo.jpg" alt="STTE Logo" class="logo" onerror="this.style.display='none'">
+        </div>
+        <h1>STTE Relatório Técnico</h1>
+
+        <form id="relatorioForm">
+            <label for="site">SITE:</label>
+            <input type="text" id="site" required>
+
+            <label for="ami">AMI:</label>
+            <input type="text" id="ami" required>
+
+            <label for="tecnico">NOME DO TÉCNICO:</label>
+            <input type="text" id="tecnico" required>
+
+            <label for="supervisor">NOME DO SUPERVISOR:</label>
+            <select id="supervisor" required>
+                <option value="ANTONIO CLEMILTON">ANTONIO CLEMILTON</option>
+                <option value="JEANETTE KRITSCH">JEANETTE KRITSCH</option>
+                <option value="JOAO CELIO">JOAO CELIO</option>
+                <option value="CLAUDIO BALDEZ">CLAUDIO BALDEZ</option>
+                <option value="GERALDICIO MOTA">GERALDICIO MOTA</option>
+                <option value="JOSE LEANDRO">JOSE LEANDRO</option>
+            </select>
+
+            <label for="coordenador">COORDENADOR:</label>
+            <select id="coordenador" required>
+                <option value="DONAYTT MEDEIROS">DONAYTT MEDEIROS</option>
+                <option value="JOÃO SÁ">JOÃO SÁ</option>
+            </select>
+
+            <label for="dataAcionamento">DATA ACIONAMENTO:</label>
+            <input type="datetime-local" id="dataAcionamento" required>
+
+            <label for="dataDeslocamento">DATA HORA DESLOCAMENTO:</label>
+            <input type="datetime-local" id="dataDeslocamento" required>
+
+            <label for="dataEntradaSite">DATA HORA ENTRADA SITE:</label>
+            <input type="datetime-local" id="dataEntradaSite" required>
+            <label for="dataSaidaSite">DATA HORA SAÍDA SITE:</label>
+            <input type="datetime-local" id="dataSaidaSite" required>
+
+            <label for="quemAcionou">QUEM ACIONOU:</label>
+            <input type="text" id="quemAcionou" required>
+
+            <label for="cadeado">SITE POSSUI CADEADO:</label>
+            <select id="cadeado" required>
+                <option value="SIM">SIM</option>
+                <option value="NAO">NÃO</option>
+            </select>
+
+            <label for="modeloCadeado">MODELO DO CADEADO ENTRADA DO SITE:</label>
+            <input type="text" id="modeloCadeado">
+
+            <label for="Gradilcadeado">GRADIL POSSUI CADEADO</label>
+            <select id="Gradilcadeado">
+                <option value="SIM">SIM</option>
+                <option value="NAO">NÃO</option>
+                <option value="N/A">N/A</option>
+                <option value="vandalizado">vandalizado</option>
+            </select>
+
+            <label for="ModeloGradil">MODELO CADEADO GRADIL:</label>
+            <input type="text" id="ModeloGradil" required>
+
+            <label for="vandalizado">SITE VANDALIZADO:</label>
+            <select id="vandalizado" required>
+                <option value="SIM">SIM</option>
+                <option value="NAO">NÃO</option>
+            </select>
+
+            <div id="gabinetesContainer">
+                <div class="gabinete">
+                    <label for="gabinete1">INFORMAR GABINETE - 01:</label>
+                    <select id="gabinete1" required>
+                        <option value="DELTA">DELTA</option>
+                        <option value="DELTA ORION">DELTA ORION</option>
+                        <option value="DELTA TX">DELTA TX</option>
+                        <option value="ELTEK">ELTEK</option>
+                        <option value="ELTEK FULL TX">ELTEK FULL TX</option>
+                        <option value="EMERSON">EMERSON</option>
+                        <option value="EMERSON TX">EMERSON TX</option>
+                        <option value="PHB">PHB</option>
+                    </select>
+
+                    <label for="retificadores1">QUANTIDADE DE RETIFICADORES POR GABINETE-FCC:</label>
+                    <input type="number" id="retificadores1" required>
+
+                    <label for="baterias1">QUANTIDADE DE BATERIAS NO GABINETE-FCC:</label>
+                    <input type="number" id="baterias1" required>
+
+                    <label for="siteBateria1">SITE COM BATERIA:</label>
+                    <select id="siteBateria1" required>
+                        <option value="SIM">SIM</option>
+                        <option value="NAO">NÃO</option>
+                    </select>
+
+                    <label for="semAutonomia1">SEM AUTONOMIA:</label>
+                    <input type="checkbox" id="semAutonomia1">
+
+                    <label for="infoBateria1">INFORMAÇÕES DA BATERIA:</label>
+                    <select id="infoBateria1" required>
+                        <option value="EP TELECOM">EP TELECOM</option>
+                        <option value="HUAWEI">HUAWEI</option>
+                        <option value="MOURA">MOURA</option>
+                        <option value="NEWMAX">NEWMAX</option>
+                        <option value="UNIPOWER">UNIPOWER</option>
+                        <option value="ZTE">ZTE</option>
+                    </select>
+
+                    <label for="quantidadeBancos1">QUANTIDADE DE BANCOS:</label>
+                    <input type="number" id="quantidadeBancos1" required>
+
+                    <label for="capacidade1">CAPACIDADE:</label>
+                    <input type="text" id="capacidade1" required>
+
+                    <label for="volts1">VOLTS:</label>
+                    <select id="volts1" required>
+                        <option value="2 V">2 V</option>
+                        <option value="12 V">12 V</option>
+                        <option value="24 V">24 V</option>
+                        <option value="48 V">48 V</option>
+                    </select>
+
+                    <label for="elemento1">ELEMENTO:</label>
+                    <input type="text" id="elemento1" required>
+
+                    <label for="consumoFonte1">CONSUMO FONTE:</label>
+                    <input type="text" id="consumoFonte1" required>
+                </div>
+            </div>
+
+            <button type="button" onclick="adicionarGabinete()">Adicionar Gabinete</button>
+            <label for="siteGPON">SITE POSSUI REDE GPON:</label>
+            <select id="siteGPON" required>
+                <option value="SIM">SIM</option>
+                <option value="NAO">NÃO</option>
+            </select>
+
+            <label for="zeladoria">NECESSÁRIO ZELADORIA:</label>
+            <select id="zeladoria" required>
+                <option value="CAPINAR">CAPINAR</option>
+                <option value="EQUIPAMENTOS">EQUIPAMENTOS</option>
+                <option value="NÃO PRECISA">NÃO PRECISA</option>
+            </select>
+
+            <label for="estadoPortas">ESTADO DAS PORTAS DOS GABINETES:</label>
+            <select id="estadoPortas" required>
+                <option value="BOAS CONDIÇÕES">BOAS CONDIÇÕES</option>
+                <option value="PRECISA DE MANUTENÇÃO">PRECISA DE MANUTENÇÃO</option>
+            </select>
+
+            <label for="portaGabinete">INFORMAR A PORTA DE QUAL GABINETE:</label>
+            <input type="text" id="portaGabinete" required>
+
+            <label for="posteInterno">EXISTÊNCIA POSTE INTERNO:</label>
+            <select id="posteInterno" required>
+                <option value="SIM">SIM</option>
+                <option value="NAO">NÃO</option>
+                <option value="PRECISA DE MANUTENÇÃO">PRECISA DE MANUTENÇÃO</option>
+            </select>
+
+            <label for="iluminacao">EXISTÊNCIA ILUMINAÇÃO INTERNA-EXTERNA:</label>
+            <select id="iluminacao" required>
+                <option value="SIM">SIM</option>
+                <option value="NAO">NÃO</option>
+                <option value="PRECISA DE MANUTENÇÃO">PRECISA DE MANUTENÇÃO</option>
+            </select>
+
+            <label for="falhaAtividade">FALHA DA ATIVIDADE:</label>
+            <input type="text" id="falhaAtividade" required>
+
+            <label for="causaEncontrada">CAUSA ENCONTRADA:</label>
+            <textarea id="causaEncontrada" rows="4" required></textarea>
+
+            <label for="acaoRealizada">AÇÃO REALIZADA:</label>
+            <textarea id="acaoRealizada" rows="4" required></textarea>
+
+            <label for="pendencias">PENDÊNCIAS:</label>
+            <textarea id="pendencias" rows="4" required></textarea>
+
+            <label for="amiPendencia">AMI DA PENDENCIA:</label>
+            <input type="text" id="amiPendencia" required>
+
+            <label for="testadoCom">TESTADO COM:</label>
+            <input type="text" id="testadoCom" required>
+
+            <label for="obs">OBS:</label>
+            <textarea id="obs" rows="4" required></textarea>
+
+            <input type="hidden" id="localizacao">
+
+            <button type="button" id="gerarRelatorioButton">Gerar Relatório</button>
+        </form>
+
+        <!-- Botão para iniciar a câmera -->
+        <button type="button" id="camera-init-button">Iniciar Câmera</button>
+
+        <!-- Contêiner para a câmera -->
+        <div id="camera-container" style="display:none;">
+            <video id="camera" autoplay playsinline></video>
+            <button id="capture-button">Tirar Foto</button>
+        </div>
+        
+        <!-- Div para exibir as fotos -->
+        <div id="photos"></div>
+        
+        <!-- Botão para salvar e voltar -->
+        <button id="save-button" style="display:none;">Salvar e Voltar</button>
+        
+        <!-- Botão para enviar pelo WhatsApp -->
+        <button id="whatsapp-button" style="display:none;">Enviar pelo WhatsApp</button>
+        
+        <div id="resultado"></div>
+        <footer>
+            <p>Thalyson Silva - NOC - STTE - thalyson.silva.pa@stte.com.br</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

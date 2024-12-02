@@ -1,0 +1,147 @@
+/* Estilos CSS */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 100px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #206ab5;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #4f81b2;
+}
+
+#enviarWhatsapp {
+    background-color: #25D366;
+}
+
+#enviarWhatsapp:hover {
+    background-color: #1DA955;
+}
+
+#resultado {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-transform: uppercase;
+    white-space: pre-wrap; /* Para manter a formatação com quebras de linha */
+}
+
+.checkbox-group {
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+:root {
+    --bg-color: #f4f4f4;
+    --text-color: #333;
+    --container-bg: #fff;
+    --result-bg: #f8f9fa;
+}
+
+body.dark {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --container-bg: #333;
+    --result-bg: #444;
+}
+
+button#theme-toggle {
+    margin-top: 10px;
+}
+
+#camera-container {
+    position: relative;
+    text-align: center;
+}
+
+#camera {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#photos img {
+    max-width: 100%;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#capture-button, #save-button, #whatsapp-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    border-radius: 5px;
+}
+
+#save-button, #whatsapp-button {
+    display: none;
+}
